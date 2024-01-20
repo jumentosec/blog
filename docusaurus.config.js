@@ -11,20 +11,20 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Blog - JumentoSEC',
+  tagline: 'Cult of the Dead Donkey',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://blog.jumentosec.lol',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'jumentosec', // Usually your GitHub org/user name.
+  projectName: 'blog.jumentosec.lol', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,13 +42,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false, //{
-          // sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        docs: false,
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
@@ -82,18 +76,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/donkey.png',
       navbar: {
-        title: 'My Site',
+        title: 'Blog | Jumento Security Conferences',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Jumento Security Conferences',
+          src: 'img/donkey.png',
         },
         items: [
-            {to: 'https://jumentosec.lol', label: 'Go to Jumento\'s', position: 'left'},
-          {to: '/', label: 'Blog', position: 'left'},
+            {to: 'https://jumentosec.lol', label: 'Go back to JumentOS', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/jumentosec/blog.jumentosec.lol',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,7 +100,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/readme-first',
               },
             ],
           },
@@ -115,16 +108,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/yFrvxEUjZ5',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/jumentosec.lol',
               },
             ],
           },
@@ -132,17 +121,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'JumentoSEC',
+                to: 'https://jumentosec.lol/'
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/jumentosec',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jumento Security Conferences. Built with ドキュサウルス.`,
       },
       prism: {
         theme: prismThemes.github,

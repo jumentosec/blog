@@ -1,0 +1,53 @@
+---
+slug: readme-first
+title: README
+authors: [nullniverse]
+tags: [blogging]
+---
+
+So, you want to make your first post here! Read below the guidelines on how to make it happen!
+
+
+<!--truncate-->
+
+## 1. Clone this Repo
+
+Start by cloning locally [this repo](https://github.com/jumentosec/blog.jumentosec.lol) and create 
+a new branch from `main`.
+
+Make sure you have allowed signed commits [(1)](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)[(2)](https://blog.nullniverse.xyz/posts/signed-commits) on your account before pushing your new branch and opening a PR.
+
+## 2. Conventions
+
+1. Use a `<!--` `truncate` `-->` comment to limit blog post size in the list view, respecting other's postings.
+1. Add yourself to the `authors.yml` file if it is your first post (Welcome!).
+1. Add a new folder with the following naming pattern: `YYYY-MM-DD-post-title` inside the `blog/` folder.
+The blog post date can be extracted from filenames, such as: `2019-05-30-welcome/index.mdx`
+1. Inside it, create a new `index.mdx` - note that the name MUST be index.mdx and we are enforcing .mdx extensions throughout this project's posts. Read more below...
+1. Images should be inserted inside your post's folder and inserted like this: ![Docusaurus Plushie](./fluffy_donkey.png)
+1. Don't forget to use tags in the headings of your posts. This way we can sort content better for our readers (:
+
+## References
+
+Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
+
+:::tip
+
+Use the power of React to create interactive blog posts. **Don't abuse this feature!**
+
+```js
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+```
+
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+
+:::
+
+We have allowed the support to write TeX text inside postings for your convenience:
+
+Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
+$F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
+$f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
+
+Please, check [KaTeX](https://katex.org/) documentations for more details.
+
